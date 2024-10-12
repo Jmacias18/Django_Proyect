@@ -89,14 +89,12 @@ WSGI_APPLICATION = 'tienda_online.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'mssql',
-        'NAME': 'SPF',
-        'HOST': 'SERVER\SQLEXPRESS',
-        'PORT': '1433',
-        'OPTIONS': {
-            'driver': 'ODBC Driver 17 for SQL Server',
-            'trusted_connection': 'yes',
-        },
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'tienda1',
+        'USER': 'root',
+        'PASSWORD': '12345',
+        'HOST': 'localhost',  # Or an IP Address that your DB is hosted on
+        'PORT': '',  # Default is '3306'
     }
 }
 
